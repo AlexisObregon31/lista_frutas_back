@@ -72,7 +72,7 @@ exports.createFruta = async (req, res) => {
 
 exports.updateFruta = async (req, res) => {
   let statusCode, message;
-  const id_fruta = req.body.id_fruta;
+  const id_fruta = req.params.id_fruta;
   let nombre = req.body.nombre;
 
   try {
@@ -102,7 +102,7 @@ exports.updateFruta = async (req, res) => {
 
 exports.deleteFruta = async (req, res) => {
   let statusCode, message;
-  const id_fruta = req.body.id_fruta;
+  const id_fruta = req.params.id_fruta;
   let nombre = req.body.nombre;
 
   try {
